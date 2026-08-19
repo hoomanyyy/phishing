@@ -3,7 +3,7 @@ import axios from "axios"
 
 export default function Login() {
   
-    const BASE_URL = "http://localhost:5000";
+    const BASE_URL = "https://phishing-oqnc.onrender.com";
 
     const [passwordVisible, setPasswordVisible] = useState(false);
     
