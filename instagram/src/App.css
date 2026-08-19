@@ -1,0 +1,506 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  color: #262626;
+  background: #fff;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==============================
+   PAGE
+============================== */
+
+.ig-page {
+  min-height: 100vh;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==============================
+   MAIN
+============================== */
+
+.ig-main {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 32px;
+}
+
+.ig-login-container {
+  width: 350px;
+}
+
+/* ==============================
+   LOGIN CARD
+============================== */
+
+.ig-login-card {
+  width: 350px;
+
+  border: 1px solid #dbdbdb;
+  background: #fff;
+
+  padding: 42px 40px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==============================
+   INSTAGRAM LOGO
+============================== */
+
+.ig-logo {
+  margin-bottom: 38px;
+
+  color: #111;
+
+  font-family:
+    "Segoe Script",
+    "Brush Script MT",
+    cursive;
+
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  line-height: 1;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+.ig-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.ig-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ig-input-wrapper input {
+  width: 100%;
+  height: 38px;
+
+  padding: 9px 8px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+
+  background: #fafafa;
+
+  color: #262626;
+
+  outline: none;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.ig-input-wrapper input::placeholder {
+  color: #737373;
+}
+
+.ig-input-wrapper input:focus {
+  border-color: #a8a8a8;
+  background: #fff;
+}
+
+/* ==============================
+   PASSWORD
+============================== */
+
+.password-wrapper input {
+  padding-right: 55px;
+}
+
+.show-password {
+  position: absolute;
+
+  right: 8px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 0;
+  padding: 0;
+
+  background: transparent;
+
+  color: #262626;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* ==============================
+   LOGIN BUTTON
+============================== */
+
+.ig-login-button {
+  width: 100%;
+  height: 32px;
+
+  margin-top: 8px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #0095f6;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.15s ease;
+}
+
+.ig-login-button:hover {
+  background: #1877f2;
+}
+
+.ig-login-button:active {
+  opacity: 0.7;
+}
+
+/* ==============================
+   OR
+============================== */
+
+.ig-or {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin: 24px 0 22px;
+}
+
+.ig-or div {
+  height: 1px;
+
+  flex: 1;
+
+  background: #dbdbdb;
+}
+
+.ig-or span {
+  color: #737373;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==============================
+   FACEBOOK
+============================== */
+
+.facebook-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border: 0;
+  padding: 0;
+
+  background: transparent;
+
+  color: #385185;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.facebook-icon {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #385185;
+  color: #fff;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+
+  line-height: 16px;
+}
+
+/* ==============================
+   FORGOT
+============================== */
+
+.forgot-link {
+  margin-top: 20px;
+
+  color: #00376b;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* ==============================
+   SIGN UP
+============================== */
+
+.ig-signup-card {
+  width: 350px;
+
+  margin-top: 10px;
+
+  padding: 22px 20px;
+
+  border: 1px solid #dbdbdb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  background: #fff;
+
+  font-size: 14px;
+}
+
+.ig-signup-card a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+/* ==============================
+   APP
+============================== */
+
+.ig-app {
+  width: 350px;
+
+  padding-top: 20px;
+
+  text-align: center;
+}
+
+.ig-app p {
+  margin: 0 0 18px;
+
+  font-size: 14px;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.app-button {
+  width: 135px;
+  height: 40px;
+
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  background: #000;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.apple {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.google-play {
+  font-size: 18px;
+}
+
+.app-text {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 15px;
+}
+
+.app-text small {
+  font-size: 8px;
+  font-weight: 400;
+
+  line-height: 9px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.ig-footer {
+  padding: 40px 20px 30px;
+
+  color: #737373;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+.footer-links {
+  max-width: 1000px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.footer-bottom select {
+  border: 0;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #737373;
+
+  font-size: 12px;
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 450px) {
+  .ig-main {
+    padding-top: 0;
+  }
+
+  .ig-login-container {
+    width: 100%;
+  }
+
+  .ig-login-card {
+    width: 100%;
+
+    border: 0;
+
+    padding: 55px 40px 30px;
+  }
+
+  .ig-signup-card {
+    width: 100%;
+
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .ig-app {
+    width: 100%;
+  }
+
+  .ig-footer {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ig-login-card {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .app-button {
+    width: 125px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+}
